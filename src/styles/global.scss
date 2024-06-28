@@ -1,1 +1,84 @@
-@import "nullstyle.scss"
+@import "nullstyle.scss";
+
+$color1: #7beec7;
+
+html,
+body {
+    min-height: 100vh;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: #60606e;
+}
+
+h2 {
+    font-size: 3.6rem;
+    color: #60606e;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #60606e;
+    position: relative;
+    top: 0;
+}
+
+.h3-decor::before {
+    content: "";
+    background-color: $color1;
+    position: absolute;
+    z-index: -1;
+    width: 68px;
+    height: 21px;
+    bottom: -4px;
+}
+
+h4 {
+    font-size: 2.4rem;
+    color: #60606e;
+}
+
+h5 {
+    font-size: 1.8rem;
+    color: #60606e;
+}
+
+h6 {
+    font-size: 1.4rem;
+    color: #60606e;
+}
+
+p {
+    color: #60606e;
+}
+
+.t-1 {
+    font-size: 1.6rem;
+}
+
+.t-2 {
+    font-size: 1.4rem;
+}
+
+.t-3 {
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 2rem 4rem;
+
+}
+
+.btn {
+    background-color: #fff;
+    color: $color1;
+}
+
+.btn-colored {
+    background-color: $color1;
+    color: #fff;
+}
