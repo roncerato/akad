@@ -1,0 +1,19 @@
+@media(max-width: 768px) {
+    .top-navigation-container {
+        flex: 0 1 350px;
+    }
+}
+
+@media(max-width: 425px) {
+    .header {
+        padding-top: 3.6rem;
+    }
+
+    .top-navigation-container {
+        flex: 0 1 100%;
+    }
+
+    .header-burger-btn {
+        width: 26px;
+    }
+}
