@@ -1,6 +1,8 @@
 @import "nullstyle.scss";
 
 $color1: #7beec7;
+$color2: #60606e;
+
 
 html,
 body {
@@ -8,6 +10,9 @@ body {
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-tap-highlight-color: transparent;
     font-size: 10px;
+    position: relative;
+    top: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -69,11 +74,11 @@ p {
 }
 
 button {
-    padding: 2rem 4rem;
-
+    background-color: transparent;
 }
 
 .btn {
+    padding: 2rem 4rem;
     background-color: #fff;
     color: $color1;
 }
@@ -81,4 +86,12 @@ button {
 .btn-colored {
     background-color: $color1;
     color: #fff;
+    padding: 2rem 4rem;
 }
+
+.container {
+    max-width: 1170px;
+    padding: 0 1.4rem;
+}
+
+@import "header.scss"
