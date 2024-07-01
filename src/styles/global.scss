@@ -75,24 +75,34 @@ p {
 
 button {
     background-color: transparent;
+    text-transform: uppercase;
 }
 
 .btn {
     padding: 2rem 4rem;
     background-color: #fff;
-    color: $color1;
+
+    h6 {
+        color: $color1;
+    }
 }
 
 .btn-colored {
-    background-color: $color1;
-    color: #fff;
+    background-color: $color1 !important;
+
+    h6 {
+        color: #fff !important;
+    }
+
     padding: 2rem 4rem;
 }
 
 .container {
     max-width: 1170px;
     padding: 0 1.4rem;
+    margin: 0 auto;
 }
 
 @import "header.scss";
 @import "media.scss";
+@import "main/main.scss"

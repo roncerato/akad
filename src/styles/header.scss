@@ -3,6 +3,7 @@
     top: 0;
     width: 100%;
     padding-top: 4.2rem;
+    z-index: 99;
 }
 
 .header-container {
@@ -41,7 +42,7 @@
 }
 
 .top-navigation {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -79,7 +80,7 @@
 }
 
 .top-navigation-container {
-    flex: 0 1 500px;
+    flex: 0 1 350px;
     height: 100%;
     background-color: white;
     padding: 20px;
