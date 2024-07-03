@@ -1,0 +1,62 @@
+.feedback-section {
+    margin-top: 15rem;
+    background-color: $color1;
+    padding: 5rem 0;
+}
+
+.feedback-container {
+    display: flex;
+
+
+}
+
+.container {}
+
+.feedback-left {
+    flex: 1 0;
+
+    h3 {
+
+        max-width: 480px;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+        letter-spacing: 1.2px;
+        color: #fff;
+    }
+
+    h6 {
+        letter-spacing: 1.6px;
+    }
+}
+
+.feedback-right {
+    flex: 1 0;
+    background-color: #fff;
+    padding: 2rem 2.6rem;
+
+    h4 {
+        line-height: 1.6;
+        max-width: 336px;
+    }
+
+    p.t-1 {
+        margin-top: 1.8rem;
+        margin-bottom: 3rem;
+        line-height: 1.5;
+        color: #999;
+    }
+
+    form {
+        display: flex;
+    }
+
+    input[type="email"] {
+        flex: 1 0;
+        border: 1px solid #e5e5e5;
+        padding: 0 2rem;
+    }
+
+    input[type="submit"] {
+        flex: 0 0;
+    }
+}

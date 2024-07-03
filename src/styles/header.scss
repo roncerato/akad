@@ -93,7 +93,10 @@
 
 .nav-item {
     text-transform: uppercase;
-    color: $color2;
+
+    p.t-2 {
+        color: #999
+    }
 }
 
 .hide-nav-btn {
