@@ -11,7 +11,7 @@ export default function Feedback() {
             <div className="feedback-container container">
                 <div className="feedback-left">
                     <H3>
-                        YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+                        YOU THINK WE'RE&nbsp;COOL&nbsp;? LET'S WORK TOGETHER
                     </H3>
                     <Button>
                         get in touch

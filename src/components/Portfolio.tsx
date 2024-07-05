@@ -46,7 +46,7 @@ export default function Portfolio() {
                 <div className="portfolio-main-content">
                     <div className="portfolio-categories">
                         <H3 decoration={false}>
-                            CHOOSE<br />
+                            CHOOSE
                             CATEGORY
                         </H3>
                         <ul className="portfolio-category-list">
