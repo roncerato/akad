@@ -1,7 +1,8 @@
-.footer {}
+.footer {
+    padding: 3rem 0;
+}
 
 .footer-container {
-    padding: 3rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -13,6 +14,20 @@
         gap: 4rem;
         grid-column: 1/2;
         grid-row: 1/2;
+
+        p.t-2 {
+            position: relative;
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                bottom: -6px;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: $color1;
+            }
+        }
     }
 
 }
@@ -46,4 +61,8 @@
     position: relative;
     width: 30px;
     aspect-ratio: 1/1;
+
+    img:hover {
+        filter: brightness(0.6);
+    }
 }

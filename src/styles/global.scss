@@ -85,6 +85,10 @@ button {
     h6 {
         color: $color1;
     }
+
+    &:hover {
+        background-color: #ffffffcf;
+    }
 }
 
 .btn-colored {
@@ -95,6 +99,10 @@ button {
     }
 
     padding: 2rem 4rem;
+
+    &:hover {
+        background-color: #6ed1b0 !important;
+    }
 }
 
 .container {

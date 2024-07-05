@@ -22,10 +22,16 @@
     flex-direction: column;
     gap: 6px;
 
+    &:hover span {
+        background-color: #999 !important;
+    }
+
     span {
         height: 2px;
         background-color: $color2;
         display: block;
+
+
     }
 
     span:nth-child(1) {
@@ -60,10 +66,28 @@
         gap: 14px;
         text-align: end;
         gap: 3rem;
+
+        a {
+            display: block !important;
+            width: fit-content;
+            margin-left: auto;
+
+        }
     }
 
     p.t-2 {
+        position: relative;
         font-size: 2rem !important;
+
+        &:hover::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: $color1;
+        }
     }
 }
 

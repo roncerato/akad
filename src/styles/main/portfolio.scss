@@ -24,6 +24,7 @@
 .portfolio-categories {
     >h3 {
         line-height: 1.4;
+        max-width: 100px;
     }
 }
 
@@ -48,6 +49,7 @@
         background-color: $color1;
         width: fit-content;
         margin-left: 0rem;
+        color: #fff;
     }
 
     input+h6 {
