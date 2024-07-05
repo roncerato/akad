@@ -5,11 +5,11 @@ import H3 from "./template/headings/h3";
 import H4 from "./template/headings/h4";
 import T1 from "./template/texts/t1";
 
-export default function Feedback() {
+export default function Newsletter() {
     return (
-        <section className="feedback-section">
-            <div className="feedback-container container">
-                <div className="feedback-left">
+        <section className="newsletter-section">
+            <div className="newsletter-container container">
+                <div className="newsletter-left">
                     <H3>
                         YOU THINK WE'RE&nbsp;COOL&nbsp;? LET'S WORK TOGETHER
                     </H3>
@@ -17,7 +17,7 @@ export default function Feedback() {
                         get in touch
                     </Button>
                 </div>
-                <div className="feedback-right">
+                <div className="newsletter-right">
                     <H4>
                         STAY INFORMED WITH OUR NEWSLETTER
                     </H4>
