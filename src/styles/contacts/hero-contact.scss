@@ -1,0 +1,120 @@
+.contact-hero-section {
+    min-height: 100vh;
+    background-image: url(../../../public/jpg/hero-page.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+
+}
+
+.conatct-hero-container {
+    position: relative;
+    z-index: 90;
+    min-height: 100vh;
+    backdrop-filter: grayscale(1) blur(2px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+.contacts-main {
+    padding-top: 15rem;
+}
+
+.contact-main-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    column-gap: 3rem;
+
+}
+
+.conatcts-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    input:first-child {
+        grid-column: 1/2;
+    }
+
+    input[type="email"] {
+        grid-column: 2/3;
+    }
+
+    input {}
+
+    input,
+    textarea {
+        background-color: #fefcf9;
+        padding: 2rem;
+        border: 1px solid #e5e5e5;
+        grid-column: 1/3;
+
+        &::placeholder {
+            color: #e5e5e5;
+        }
+    }
+
+    input[type='submit'] {
+        justify-self: flex-start;
+        padding: 2rem 4rem
+    }
+
+    .btn-colored {
+        color: #fff !important;
+        text-transform: uppercase;
+    }
+}
+
+.contacts-info {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 10rem;
+
+    h6 {
+        text-transform: uppercase;
+        max-width: 536px;
+
+        a {
+            color: #999;
+            display: block;
+            text-transform: lowercase;
+        }
+    }
+
+    p.t-2 {
+        color: #999;
+
+        a {
+            color: #999;
+            display: block;
+
+            &:first-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    p.t-2:first-of-type {
+        line-height: 1.4;
+    }
+}
+
+.contacts-map {
+    grid-row: 1/3;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
