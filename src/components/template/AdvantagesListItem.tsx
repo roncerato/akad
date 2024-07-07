@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image"
 import H5 from "./headings/h5"
-import { IAdvantageList } from "../Advantages"
+import { IAdvantageList } from "../home/Advantages"
 import T2 from "./texts/t2"
 
 interface IProps extends IAdvantageList {

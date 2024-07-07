@@ -1,13 +1,13 @@
 import Image, { StaticImageData } from "next/image";
-import H3 from "./template/headings/h3";
-import T2 from "./template/texts/t2";
+import H3 from "../template/headings/h3";
+import T2 from "../template/texts/t2";
 import lines from "public/jpg/lines.png"
 import shopCart from "public/jpg/shopCart.png"
 import shuffle from "public/jpg/sync.png"
 import unlimited from "public/jpg/unlimited.png"
-import H5 from "./template/headings/h5";
+import H5 from "../template/headings/h5";
 import advImg from "public/jpg/advantages-img.png"
-import AdvantagesListItem from "./template/AdvantagesListItem";
+import AdvantagesListItem from "../template/AdvantagesListItem";
 export interface IAdvantageList {
     title: string
     imgUrl: StaticImageData

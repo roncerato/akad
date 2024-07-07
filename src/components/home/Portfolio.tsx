@@ -1,8 +1,8 @@
 "use client"
 import { ChangeEvent, useState } from "react";
-import H3 from "./template/headings/h3";
-import H6 from "./template/headings/h6";
-import T2 from "./template/texts/t2";
+import H3 from "../template/headings/h3";
+import H6 from "../template/headings/h6";
+import T2 from "../template/texts/t2";
 import Image from "next/image";
 import { portfolioData } from "@/constants/portfolioData";
 

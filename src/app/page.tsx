@@ -1,6 +1,6 @@
-import Advantages from "@/components/Advantages";
-import Hero from "@/components/Hero";
-import Portfolio from "@/components/Portfolio";
+import Advantages from "@/components/home/Advantages";
+import Hero from "@/components/home/Hero";
+import Portfolio from "@/components/home/Portfolio";
 import Newsletter from "@/components/Newsletter";
 
 

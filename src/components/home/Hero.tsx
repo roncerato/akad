@@ -1,9 +1,9 @@
-import Button from "./template/Button";
-import H1 from "./template/headings/h1";
-import H3 from "./template/headings/h3";
-import H5 from "./template/headings/h5";
-import T1 from "./template/texts/t1";
-import T2 from "./template/texts/t2";
+import Button from "../template/Button";
+import H1 from "../template/headings/h1";
+import H3 from "../template/headings/h3";
+import H5 from "../template/headings/h5";
+import T1 from "../template/texts/t1";
+import T2 from "../template/texts/t2";
 import Image from "next/image";
 import historyImage from "public/jpg/history-img.png"
 export default function Hero() {
