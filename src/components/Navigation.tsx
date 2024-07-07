@@ -21,7 +21,7 @@ export default function Navigation() {
         {
             name: "About us",
             id: 2,
-            href: "/about_us"
+            href: "/about"
         },
         {
             name: "Blog",
