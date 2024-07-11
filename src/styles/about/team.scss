@@ -1,0 +1,49 @@
+.team-section {
+    padding-top: 15rem;
+}
+
+.team-container {
+    h3 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    p.t-2 {
+        line-height: 1.6;
+        max-width: 716px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.team-user-list {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.team-user {}
+
+.team-user-img-wrap {
+    aspect-ratio: 3 / 4;
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+}
+
+.team-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 6rem 3rem;
+    background-color: #efeff0;
+    margin-top: 3rem;
+
+    p.t-1 {
+        font-style: italic;
+        line-height: 1.6;
+    }
+}
