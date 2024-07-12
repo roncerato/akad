@@ -3,7 +3,7 @@
 import H6 from "../template/headings/h6"
 import T2 from "../template/texts/t2"
 import { Montserrat } from "next/font/google";
-import "@/styles/contact/style.scss"
+
 
 const montserrat = Montserrat({ weight: "700", subsets: ["latin", "cyrillic"] })
 
