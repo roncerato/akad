@@ -1,0 +1,98 @@
+.blog-main-content {
+    grid-column: 1/9;
+}
+
+.blog-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.blog-post-item {
+    &>h5 {
+        margin: 1.8rem 0 3rem;
+    }
+
+    &>p.t-2 {
+        line-height: 1.6;
+        margin-bottom: 3rem;
+    }
+}
+
+.blog-post-image-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative !important;
+    }
+}
+
+.blog-post-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+}
+
+.blog-post-time {
+    padding: 1rem 1.8rem;
+    background-color: #7beec7;
+
+    h6 {
+        color: #fff;
+    }
+}
+
+.blog-post-comments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    &::before {
+        content: "";
+        display: block;
+        background-image: url(/jpg/chat.png);
+        width: 30px;
+        aspect-ratio: 1/1;
+        background-size: 100%;
+    }
+}
+
+.blog-post-likes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    &::before {
+        content: "";
+        background-size: 100%;
+        display: block;
+        background-image: url(/jpg/smiley.png);
+        width: 30px;
+        aspect-ratio: 1/1
+    }
+}
+
+.blog-post-btn-read-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    &::after {
+        content: "";
+        background-size: 100%;
+        display: block;
+        background-image: url(/jpg/right.png);
+        width: 12px;
+        aspect-ratio: 1/1
+    }
+
+}
