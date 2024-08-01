@@ -16,6 +16,13 @@
     &>p.t-2 {
         line-height: 1.6;
         margin-bottom: 3rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.5em;
+        max-height: 3em;
     }
 }
 
@@ -24,6 +31,7 @@
     width: 100%;
     height: auto;
     margin-bottom: 3rem;
+    aspect-ratio: 4/3;
 
     img {
         width: 100%;
@@ -37,6 +45,7 @@
     display: flex;
     flex-direction: row;
     gap: 1.8rem;
+    align-items: center;
 }
 
 .blog-post-time {
@@ -80,6 +89,24 @@
     }
 }
 
+.liked {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    &::before {
+        content: "";
+        background-size: 100%;
+        display: block;
+        background-image: url(/jpg/smiley_red.png);
+        width: 30px;
+        aspect-ratio: 1/1;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
 .blog-post-btn-read-more {
     display: flex;
     flex-direction: row;
@@ -95,4 +122,24 @@
         aspect-ratio: 1/1
     }
 
+}
+
+.loader {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.loading-text {
+    color: #e0e0e0 !important;
 }
