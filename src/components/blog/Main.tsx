@@ -1,80 +1,69 @@
+"use client"
+
 import Image from "next/image"
 import H5 from "../template/headings/h5"
 import T2 from "../template/texts/t2"
 import H6 from "../template/headings/h6"
+import { useEffect, useState } from "react"
+import PostLoading from "./PostLoading"
+import Post from "./Post"
+import { faker } from '@faker-js/faker';
 
-export default function Main() {
+export interface IPosts {
+    "id": string,
+    "title": string,
+    "body": string,
+    "tags": string[],
+    "reactions": {
+        "likes": number,
+        "dislikes": number
+    },
+    "views": number,
+    "userId": number,
+    "date": string,
+    "comments": number
+}
+
+export interface IPostApi {
+    posts: IPosts[],
+    total: number,
+    skip: number,
+    limit: number
+}
+
+
+
+export default function Main({url}: {url: string}) {
+
+    const [postsAPI, setPosts] = useState<IPostApi | null>()
+    useEffect(() => {
+        fetch(url)
+            .then(res => res.json() as Promise<IPostApi>)
+            .then(res => {
+                res.posts.map(item=>{
+                    item.date = faker.date.past({ years: 2 }).toLocaleDateString('en-US', {
+                        month: 'long',
+                        day: 'numeric',
+                        year: 'numeric'
+                    })
+                    item.comments = Math.round(Math.random() * 250)
+                })
+                setPosts(res)
+            });
+    }, [url])
+
     return (
         <div className="blog-main-content">
             <ul className="blog-post-list">
-                <li className="blog-post-item">
-                    <div className="blog-post-image-wrap">
-                        <Image fill src={"/jpg/mountains.jpg"} alt={"mountains"} />
-
-                    </div>
-                    <div className="blog-post-info">
-                        <div className="blog-post-time">
-                            <H6>
-                                October 13, 2015
-                            </H6>
-                        </div>
-                        <div className="blog-post-comments">
-                            <H6>
-                                8
-                            </H6>
-                        </div>
-                        <button className="blog-post-likes">
-                            <H6>
-                                15
-                            </H6>
-                        </button>
-                    </div>
-                    <H5>
-                        THE BIG LEAGUES OUR TURN STRAIGHTNIN
-                    </H5>
-                    <T2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </T2>
-                    <button className="blog-post-btn-read-more">
-                        <H6>
-                            continue reading
-                        </H6>
-                    </button>
-                </li>
-                <li className="blog-post-item">
-                    <div className="blog-post-image-wrap">
-                        <Image fill src={"/jpg/mountains.jpg"} alt={"mountains"} />
-
-                    </div>
-                    <div className="blog-post-info">
-                        <div className="blog-post-time">
-                            <H6>
-                                October 13, 2015
-                            </H6>
-                        </div>
-                        <div className="blog-post-comments">
-                            <H6>
-                                8
-                            </H6>
-                        </div>
-                        <button className="blog-post-likes">
-                            <H6>
-                                15
-                            </H6>
-                        </button>
-                    </div>
-                    <H5>
-                        THE BIG LEAGUES OUR TURN STRAIGHTNIN
-                    </H5>
-                    <T2>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </T2>
-                    <button className="blog-post-btn-read-more">
-                        <H6>
-                            continue reading
-                        </H6>
-                    </button>
-                </li>
+                {postsAPI ?
+                    postsAPI.posts.map(item => (
+                        <Post posts={item} key={Math.random().toString(36).slice(2)}/>
+                    ))
+                    :
+                    [0, 0, 0].map(() => (
+                        <PostLoading />
+                    ))
+                }
             </ul>
         </div>
     )
