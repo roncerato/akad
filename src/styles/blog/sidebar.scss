@@ -5,7 +5,15 @@
     gap: 5rem;
 }
 
+.sidebar-search-form-wrap {
+    position: relative;
+    top: 0;
+}
+
 .sidebar-search-form {
+    position: absolute;
+    top: 0;
+    width: 100%;
     padding: 1.6rem;
     background-color: #ececec;
     display: flex;
@@ -24,9 +32,32 @@
     }
 }
 
+.search-form-tag-list {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 100%;
+    max-height: 120px;
+    background: #ececec;
+    z-index: 999;
+    overflow-y: scroll;
+    padding: 1.6rem;
+    border-top: 1px solid #d9d9d9;
+
+}
+
+.search-form-tag-list-item {
+    text-transform: capitalize;
+}
+
 
 
 .sidebar-posts {
+    margin-top: 5rem;
+
     &>h6 {
         margin-bottom: 3rem;
     }
@@ -48,32 +79,32 @@
 }
 
 .sidebar-post-filter-item {
-    button {
-        width: 100%;
+    input {
+        display: none;
     }
 
     h6 {
-        font-size: 1.2rem;
-        width: 100%;
-    }
+        text-transform: uppercase;
+        position: relative;
+        top: 0;
+        text-align: center !important;
 
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: -20px;
-        // left: 0px;
-        height: 3px;
-        background-color: #ececec;
-        width: -webkit-fill-available;
-        ;
-    }
-
-    &-active {
         &::before {
-            background-color: #7beec7;
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            background-color: #ececec;
+            width: 100%;
+            height: 4px;
         }
     }
+
+    input:checked+h6::before {
+        background-color: #7beec7;
+    }
 }
+
 
 .sidebar-posts-filter-content {
     display: flex;
@@ -102,6 +133,7 @@
 }
 
 .sidebar-categories {
+
     h6 {
         text-transform: uppercase;
         margin-bottom: 3rem;
@@ -120,7 +152,12 @@
     justify-content: space-between;
     position: relative;
     text-transform: capitalize;
+    cursor: pointer;
 
+    &:hover p.t-2:nth-child(1){
+        transition: all ease-in 0.2s;
+        margin-left: 1rem;
+    }
     &::before {
         position: absolute;
         bottom: -20px;
@@ -150,4 +187,8 @@
     display: inline-block;
     padding: 1rem 2.2rem;
     background-color: #e5e5e5;
+    cursor: pointer;
+    &:hover{
+        background-color: #7beec7;
+    }
 }
