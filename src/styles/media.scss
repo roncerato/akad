@@ -32,6 +32,14 @@
     .hero-section::after {
         height: 8% !important;
     }
+
+    .blog-container {
+        gap: 7rem !important;
+    }
+
+    .sidebar {
+        grid-column: 9 / 13 !important;
+    }
 }
 
 
@@ -75,6 +83,18 @@
             margin-top: 6rem !important;
         }
     }
+
+    .blog-section {
+        padding-top: 8rem !important;
+    }
+
+    .blog-container {
+        gap: 4rem !important;
+    }
+
+    .wwd-img-section img {
+        object-fit: cover !important;
+    }
 }
 
 @media(max-width: 800px) {
@@ -98,6 +118,39 @@
 
     .advantage-subcategory-list {
         grid-column: 2/3;
+    }
+
+    .pricing-plans-section {
+        padding-top: 7rem !important;
+    }
+
+    .pricing-plans-list{
+        overflow-y: hidden;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            height: 3px;
+            background-color: #dbdbdb00;
+            padding: 2rem 0;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #7beec7;
+            border-radius: 50px;
+            height: 1px;
+        }
+    }
+
+    .price {
+        padding: 3.2rem 1.8rem 3rem !important;
+        flex: 0 0 260px !important;
+        &:hover{
+            box-shadow: none !important;
+        }
+    }
+
+    .price-services {
+
+        gap: 1.4rem !important;
+        margin: 4rem 0 !important;
     }
 }
 
@@ -199,6 +252,15 @@
         }
     }
 
+    .services-benfits-section {
+        padding: 8rem 0 !important;
+    }
+
+    .services-benefits-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .footer-container {
 
         grid-template-columns: 1fr !important;
@@ -228,6 +290,35 @@
             &-list {
                 justify-content: center;
             }
+        }
+    }
+
+    .blog-container {
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+
+    .wwd-main {
+        display: flex !important;
+        flex-direction: column-reverse;
+        gap: 3.6rem;
+    }
+
+    .wwd-img-section {
+        order: 1;
+    }
+
+    .wwd-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .wwd-text-section{
+        &>p.t-2{
+            text-align: center !important;
         }
     }
 }
@@ -277,6 +368,30 @@
     .header-burger-btn {
         width: 26px;
     }
+
+    .advanatages-section p.t-2 {
+        text-align: center !important;
+        line-height: 1.2;
+    }
+
+    .advantages-container {
+        &>p.t-2 {
+            margin-bottom: 7rem !important;
+        }
+
+        &>h3 {
+            text-align: center !important;
+        }
+    }
+
+    .portfolio-container {
+
+        &>h3,
+        &>p.t-2 {
+            text-align: center !important;
+        }
+    }
+
 
     .advantage-category-item {
         display: flex !important;
@@ -331,8 +446,18 @@
         gap: 3rem;
     }
 
+    .sidebar-posts {
+        display: none !important;
+    }
 
+    .sidebar-categories {
 
+        display: none !important;
+    }
+
+    .sidebar-tags {
+        padding-top: 3rem;
+    }
 }
 
 @media(max-width: 400px) {}
