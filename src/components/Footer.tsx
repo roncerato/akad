@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navigation from "./Navigation";
 import T2 from "./template/texts/t2";
 import T3 from "./template/texts/t3";
+import FooterNavigation from "./FooterNavigation";
 
 export default function Footer() {
 
@@ -49,7 +50,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container container">
-                <Navigation />
+                <FooterNavigation />
                 <div className="footer-copyrights">
                     <T3>
                         Created by akhouad 2016. All Rights Reserved
@@ -65,8 +66,6 @@ export default function Footer() {
                                 </Link>
                             </li>
                         ))
-
-
                         }
                     </ul>
                 </div>
