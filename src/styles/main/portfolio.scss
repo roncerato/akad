@@ -33,6 +33,19 @@
     flex-direction: column;
     gap: 3rem;
     margin-top: 4rem;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+    &::-webkit-scrollbar {
+        height: 3px;
+        background-color: #dbdbdb;
+        padding: 2rem 0;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #7beec7;
+        border-radius: 50px;
+        height: 1px;
+    }
+    
 }
 
 .portfolio-category-item {
