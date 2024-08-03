@@ -5,12 +5,12 @@ import { benefitsV2 } from "@/constants/benefitsV2"
 
 export default function Benefits() {
     return (
-        <section className="benfits-section">
-            <div className="benfits-container container">
-                <ul className="benefits-list">
+        <section className="services-benfits-section">
+            <div className="services-benfits-container container">
+                <ul className="services-benefits-list">
                     {benefitsV2.map(item => (
-                        <li className="benefit" key={item.id}>
-                            <div className="benefit-img-wrap">
+                        <li className="services-benefit" key={item.id}>
+                            <div className="services-benefit-img-wrap">
                                 <Image src={item.urlImg} alt={item.title} fill />
                             </div>
                             <H5>
