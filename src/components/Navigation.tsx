@@ -10,7 +10,7 @@ export interface INavList {
 
 
 
-export default function Navigation() {
+export default function Navigation({setIsOpen}: {setIsOpen: React.Dispatch<React.SetStateAction<boolean | undefined>>}) {
 
     const navList: INavList[] = [
         {
@@ -44,7 +44,7 @@ export default function Navigation() {
         <nav className="navigation">
             <ul className="nav-list">
                 {navList.map(item => (
-                    <NavItem key={item.id} name={item.name} href={item.href} />
+                    <NavItem key={item.id} name={item.name} href={item.href} setIsOpen={setIsOpen}/>
                 ))}
             </ul>
         </nav>

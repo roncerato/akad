@@ -37,7 +37,7 @@ export default function Header() {
                     <button className="hide-nav-btn" onClick={() => { setIsOpen(false) }}>
                         <Image src={close} alt={"close"} />
                     </button>
-                    <Navigation />
+                    <Navigation setIsOpen={setIsOpen}/>
                 </div>
             </div>
         </>
