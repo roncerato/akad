@@ -70,10 +70,18 @@ export default function Portfolio() {
                     </div>
                     <ul className="portfolio-list">
 
-                        {
+
+                        {categoryName == "all" ?
+
+                            Array.from({length: 9}).map(item => (
+                                <li className="porttfolio-item loader" key={"r"+Math.random().toString(36).slice(2)}>
+
+                                </li>
+                            )) :
+
                             categoryItems.categoryItem.map((item) => (
 
-                                <li className="porttfolio-item">
+                                <li className="porttfolio-item" key={"p"+Math.random().toString(36).slice(2)}>
                                     <Image
                                         src={item.url} alt={item.name} className="portfolio-item-img"
                                         layout="fill"
@@ -83,41 +91,7 @@ export default function Portfolio() {
                             ))
                         }
 
-                        {/* <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li>
-                        <li className="porttfolio-item loaded">
-                        </li>
-                        <li className="porttfolio-item loaded">
-
-                        </li> */}
+                       
                     </ul>
                 </div>
             </div>
