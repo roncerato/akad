@@ -26,7 +26,7 @@ export default function PricingPlans() {
                                 </H6>
                                 <ul className="price-services">
                                     {item.services.map((service) => (
-                                        <li className="price-service">
+                                        <li className="price-service" key={"ps"+Math.random().toString(36).slice(2)}>
                                             <T2>
                                                 {service}
                                             </T2>
