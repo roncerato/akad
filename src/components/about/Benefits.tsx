@@ -15,7 +15,7 @@ export default function Benefits() {
                 </T2>
                 <ul className="benefits-list">
                     {benefits.map(item => (
-                        <li className="benefit">
+                        <li className="benefit" key={"b"+Math.random().toString(36).slice(2)}>
                             <div className="benefit-img-wrap">
                                 <Image src={item.imgSrc} alt={item.id} layout="fill"
                                     objectPosition={"cover"} />
