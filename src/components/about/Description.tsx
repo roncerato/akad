@@ -1,9 +1,13 @@
+
 import H3 from "../template/headings/h3";
 import T2 from "../template/texts/t2";
 
+
 export default function Description() {
+
+
     return (
-        <section className="description-section">
+        <section className="description-section" id="description">
             <div className="description-container container">
                 <div className="description-column">
                     <H3>
