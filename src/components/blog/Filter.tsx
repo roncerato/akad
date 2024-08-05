@@ -83,7 +83,7 @@ export default function Filter({setUrl}: IProps ) {
             </ul>
             <ul className="sidebar-posts-filter-content">
                 {filterItems?.posts.map(post => (
-                    <li key={post.id} className="sidebar-posts-filter-content-item">
+                    <li key={Math.random().toString(36).slice(2)} className="sidebar-posts-filter-content-item">
                         <div className="sidebar-posts-filter-img-wrap">
                             <Image src={"/jpg/mountains.jpg"} alt={post.title} fill />
                         </div>

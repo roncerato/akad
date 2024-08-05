@@ -47,7 +47,7 @@ export default function SearchForm({setUrl}: {setUrl: React.Dispatch<React.SetSt
             </form>
             {searchFormOpened && tags && <ul className="search-form-tag-list">
                 {tags.length != 0 ? tags.map(item => (
-                    <li className="search-form-tag-list-item" key={item}>
+                    <li className="search-form-tag-list-item" key={"tag"+Math.random().toString(36).slice(2)}>
                         <button onClick={()=>{
                             setUrl(`https://dummyjson.com/posts/tag/${item}`)
                             setSeachFormOpened(false)

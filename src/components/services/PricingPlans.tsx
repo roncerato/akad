@@ -17,7 +17,7 @@ export default function PricingPlans() {
                 <ul className="pricing-plans-list">
                     {
                         prices.map((item) => (
-                            <li className="price">
+                            <li className="price" key={"price"+Math.random().toString(36).slice(2)}>
                                 <H3 decoration={false}>
                                     {item.title}
                                 </H3>

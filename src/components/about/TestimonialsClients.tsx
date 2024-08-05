@@ -16,7 +16,7 @@ export default function TestimonialsClients() {
                 <div className="clients-section">
                     <ul className="client-list">
                         {clients.map(item => (
-                            <li className="client" key={item.id}>
+                            <li className="client" key={"client"+Math.random().toString(36).slice(2)}>
 
                                 <Image src={item.img} alt={item.name} fill />
                             </li>

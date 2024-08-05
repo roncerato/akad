@@ -17,7 +17,7 @@ export default function Team() {
                 </T2>
                 <ul className="team-user-list">
                     {team.map(item => (
-                        <li className="team-user">
+                        <li className="team-user" key={"team"+Math.random().toString(36).slice(2)}>
                             <div className="team-user-img-wrap">
                                 <Image src={item.image} alt={item.firstName} fill />
                             </div>

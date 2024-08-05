@@ -60,7 +60,7 @@ export default function Footer() {
                     <ul className="footer-social-list">
 
                         {social.map(item => (
-                            <li className="footer-social-item" key={item.id}>
+                            <li className="footer-social-item" key={"s"+Math.random().toString(36).slice(2)}>
                                 <Link href={item.url} target="_blank" rel="noopener noreferrer">
                                     <Image src={item.imgHref} alt={item.name} fill />
                                 </Link>

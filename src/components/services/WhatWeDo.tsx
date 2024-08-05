@@ -63,7 +63,7 @@ export default function WhatWeDo() {
                         <ul className="wwd-list">
 
                             {list.map(item => (
-                                <li className="wwd-list-item" key={item.id}>
+                                <li className="wwd-list-item" key={Math.random().toString(36).slice(2)}>
                                     <T2>
                                         {item.item}
                                     </T2>

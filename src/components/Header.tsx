@@ -32,8 +32,8 @@ export default function Header() {
                 </div>
             </header>
 
-            <div className={`top-navigation ${isOpen ? "opacity-1" : "opacity-0"}`}>
-                <div ref={topNavRef} className={`top-navigation-container animate__animated ${isOpen ? "animate__fadeInRight" : "animate__fadeOutRight"}`}>
+            <div className={`top-navigation ${isOpen ? "show" : "hide"}`}>
+                <div ref={topNavRef} className={`top-navigation-container`}>
                     <button className="hide-nav-btn" onClick={() => { setIsOpen(false) }}>
                         <Image src={close} alt={"close"} />
                     </button>

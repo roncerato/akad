@@ -36,8 +36,8 @@ export default function TestimonialsSlider() {
         <Slider {...settings}>
             {
                 ['1', '2', '3'].map(item => (
-                    <div>
-                        <div className="slide" key={item}>
+                    <div key={"slider"+Math.random().toString(36).slice(2)}>
+                        <div className="slide" >
                             <div className="testimonial-img-wrap">
                                 <Image src={"/jpg/testimonial.jpg"} alt={"test"} fill />
                             </div>

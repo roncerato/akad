@@ -9,7 +9,7 @@ export default function Benefits() {
             <div className="services-benfits-container container">
                 <ul className="services-benefits-list">
                     {benefitsV2.map(item => (
-                        <li className="services-benefit" key={item.id}>
+                        <li className="services-benefit" key={Math.random().toString(36).slice(2)}>
                             <div className="services-benefit-img-wrap">
                                 <Image src={item.urlImg} alt={item.title} fill />
                             </div>

@@ -44,7 +44,7 @@ export default function Navigation({setIsOpen}: {setIsOpen: React.Dispatch<React
         <nav className="navigation">
             <ul className="nav-list">
                 {navList.map(item => (
-                    <NavItem key={item.id} name={item.name} href={item.href} setIsOpen={setIsOpen}/>
+                    <NavItem key={"h"+Math.random().toString(36).slice(2)} name={item.name} href={item.href} setIsOpen={setIsOpen}/>
                 ))}
             </ul>
         </nav>

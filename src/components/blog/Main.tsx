@@ -61,7 +61,7 @@ export default function Main({url}: {url: string}) {
                     ))
                     :
                     [0, 0, 0].map(() => (
-                        <PostLoading />
+                        <PostLoading key={"pl"+Math.random().toString(36).slice(2)}/>
                     ))
                 }
             </ul>
