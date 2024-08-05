@@ -9,7 +9,7 @@ const montserrat = Montserrat({ weight: "700", subsets: ["latin", "cyrillic"] })
 
 export default function Main() {
     return (
-        <div className="contacts-main">
+        <div className="contacts-main" id="contact-form">
             <div className="contact-main-container container">
                 <form action="" className={`conatcts-form ${montserrat.className}`} onSubmit={(event) => { event.preventDefault() }}>
                     <input type="text" name="" id="" placeholder="YOUR NAME" />

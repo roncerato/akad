@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import Button from "./template/Button";
 import H3 from "./template/headings/h3";
 import H4 from "./template/headings/h4";
@@ -13,9 +14,12 @@ export default function Newsletter() {
                     <H3>
                         YOU THINK WE'RE&nbsp;COOL&nbsp;? LET'S WORK TOGETHER
                     </H3>
-                    <Button>
-                        get in touch
-                    </Button>
+                    <Link href={"/contacts#contact-form"}>
+                        <Button>
+                            get in touch
+                        </Button>
+                    </Link>
+
                 </div>
                 <div className="newsletter-right">
                     <H4>
