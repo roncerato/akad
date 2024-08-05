@@ -14,7 +14,7 @@ export default function Hero() {
                 <div className="container">
                     <div className="hero-main">
                         <H5>
-                            WE'RE
+                            WE&apos;RE
                         </H5>
                         <H1>
                             CREATIVE AGENCY

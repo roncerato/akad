@@ -12,7 +12,7 @@ export default function Newsletter() {
             <div className="newsletter-container container">
                 <div className="newsletter-left">
                     <H3>
-                        YOU THINK WE'RE&nbsp;COOL&nbsp;? LET'S WORK TOGETHER
+                        YOU THINK WE&apos;RE&nbsp;COOL&nbsp;? LET'S WORK TOGETHER
                     </H3>
                     <Link href={"/contacts#contact-form"}>
                         <Button>
