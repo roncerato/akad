@@ -1,0 +1,463 @@
+@media(max-width: 1160px) {
+
+    html,
+    body {
+        font-size: 9.2px !important;
+    }
+
+    .hero-section::after {}
+
+    .hero-history {
+        gap: 3rem !important;
+    }
+
+    .advantages-category-list {
+        gap: 2rem !important;
+    }
+
+
+    .advantages-main-content {
+
+        gap: 4rem !important;
+    }
+
+    .advantages-img-wrap img {
+        object-fit: contain !important;
+    }
+
+    .advantage-category-item {
+        flex: 1 0 200px !important;
+    }
+
+    .hero-section::after {
+        height: 8% !important;
+    }
+
+    .blog-container {
+        gap: 7rem !important;
+    }
+
+    .sidebar {
+        grid-column: 9 / 13 !important;
+    }
+}
+
+
+@media (max-width: 920px) {
+
+    html,
+    body {
+        font-size: 8.8px !important;
+    }
+
+    .hero-history-image-wrap {
+        min-width: 300px;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .advantage-category-item {}
+
+    .contact-main-container {
+        grid-template-columns: 1fr !important;
+        row-gap: 4rem !important;
+    }
+
+    .contacts-map {
+        grid-column: 1/2;
+        grid-row: 2 / 3 !important;
+    }
+
+    .contacts-info {
+        grid-column: 1 / 2 !important;
+        grid-row: 3 / 4 !important;
+        margin-top: 0 !important;
+    }
+
+    .contacts-main {
+        padding-top: 6rem !important;
+
+        &+.newsletter-section {
+            margin-top: 6rem !important;
+        }
+    }
+
+    .blog-section {
+        padding-top: 8rem !important;
+    }
+
+    .blog-container {
+        gap: 4rem !important;
+    }
+
+    .wwd-img-section img {
+        object-fit: cover !important;
+    }
+}
+
+@media(max-width: 800px) {
+    .advantages-img-wrap {
+        display: none !important;
+    }
+
+    .advantages-category-list {
+        display: grid !important;
+        grid-template: 1fr 1fr / auto auto;
+        margin: 0 auto;
+        gap: 4rem !important;
+    }
+
+    .advantage-category-item {
+        flex: 0 0 200px !important;
+        display: grid !important;
+        grid-template: auto auto / auto 1fr;
+        align-items: center;
+    }
+
+    .advantage-subcategory-list {
+        grid-column: 2/3;
+    }
+
+    .pricing-plans-section {
+        padding-top: 7rem !important;
+    }
+
+    .pricing-plans-list{
+        overflow-y: hidden;
+        overflow-x: scroll;
+        &::-webkit-scrollbar {
+            height: 3px;
+            background-color: #dbdbdb00;
+            padding: 2rem 0;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #7beec7;
+            border-radius: 50px;
+            height: 1px;
+        }
+    }
+
+    .price {
+        padding: 3.2rem 1.8rem 3rem !important;
+        flex: 0 0 260px !important;
+        &:hover{
+            box-shadow: none !important;
+        }
+    }
+
+    .price-services {
+
+        gap: 1.4rem !important;
+        margin: 4rem 0 !important;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .top-navigation-container {
+        flex: 0 1 350px;
+    }
+
+    .hero-section::after {
+        display: none;
+        height: 8% !important;
+    }
+
+    .hero-history {
+        display: none !important;
+    }
+
+    .advanatages-section {
+        padding: 0 2rem;
+        padding-top: 8rem !important;
+
+        h3 {
+            text-align: left !important;
+        }
+
+        p.t-2 {
+            text-align: left !important;
+            max-width: 510px !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    .portfolio-container {
+
+        h3 {
+            text-align: left !important;
+        }
+
+        p.t-2 {
+            text-align: left !important;
+            max-width: 510px !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    .portfolio-main-content {
+        display: flex;
+        flex-direction: column !important;
+        gap: 3rem;
+    }
+
+    .portfolio-category-list {
+
+        flex-direction: row !important;
+        gap: 1rem !important;
+        overflow-y: scroll;
+        align-items: center;
+        text-align: center;
+    }
+
+    .portfolio-list {
+        gap: 1rem !important;
+    }
+
+    .portfolio-category-item {
+        border: 1px solid #cecece63;
+
+        input+h6 {
+            margin-left: 0rem !important;
+        }
+    }
+
+
+    .portfolio-categories {
+        >h3 {
+            line-height: 1.4;
+            max-width: fit-content !important;
+            margin-left: auto;
+        }
+    }
+
+    .newsletter-section {
+        margin-top: 3rem !important;
+    }
+
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-left {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
+
+    .services-benfits-section {
+        padding: 8rem 0 !important;
+    }
+
+    .services-benefits-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        gap: 1rem !important;
+        justify-content: center;
+
+        .navigation {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+            .nav-list {
+                justify-content: center;
+            }
+        }
+
+        .footer-copyrights {
+            grid-column: 1/2 !important;
+            grid-row: 2/3 !important;
+            text-align: center;
+        }
+
+        .footer-social {
+            grid-column: 1/2;
+            grid-row: 3/4;
+
+            &-list {
+                justify-content: center;
+            }
+        }
+    }
+
+    .blog-container {
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+
+    .wwd-main {
+        display: flex !important;
+        flex-direction: column-reverse;
+        gap: 3.6rem;
+    }
+
+    .wwd-img-section {
+        order: 1;
+    }
+
+    .wwd-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .wwd-text-section{
+        &>p.t-2{
+            text-align: center !important;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .newsletter-container {
+        gap: 1.6rem;
+    }
+
+    .newsletter-left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        h3 {
+            margin-bottom: 0 !important;
+            text-align: center;
+        }
+    }
+
+    .conatcts-form {
+        grid-template-columns: 1fr !important;
+
+        input,
+        textarea {
+            grid-column: auto !important;
+            grid-row: auto !important;
+        }
+
+        input[type='submit'] {
+            justify-self: stretch !important;
+            ;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .header {
+        padding-top: 3.6rem;
+    }
+
+    .top-navigation-container {
+        flex: 0 1 100%;
+    }
+
+    .header-burger-btn {
+        width: 26px;
+    }
+
+    .advanatages-section p.t-2 {
+        text-align: center !important;
+        line-height: 1.2;
+    }
+
+    .advantages-container {
+        &>p.t-2 {
+            margin-bottom: 7rem !important;
+        }
+
+        &>h3 {
+            text-align: center !important;
+        }
+    }
+
+    .portfolio-container {
+
+        &>h3,
+        &>p.t-2 {
+            text-align: center !important;
+        }
+    }
+
+
+    .advantage-category-item {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .advantage-subcategory-list {
+        align-items: center;
+    }
+
+    .portfolio-list {
+        gap: 0.8rem !important;
+    }
+
+    .newsletter-right {
+
+        form {
+            flex-direction: column;
+
+            input[type="email"] {
+
+                padding: 2rem !important;
+            }
+        }
+    }
+
+    footer {
+        .nav-list {
+            gap: 1.6rem !important;
+        }
+
+        .footer-container .footer-copyrights {
+            grid-row: 3/4 !important;
+            display: grid;
+            place-items: center;
+
+            p.t-3 {
+                color: #cfcfcf;
+            }
+        }
+
+        .footer-social {
+            grid-row: 2/3 !important;
+        }
+    }
+
+    .portfolio-list {
+        flex: 1 0;
+        display: grid;
+        grid-template: repeat(4, 200px) / 1fr 1fr !important;
+        gap: 3rem;
+    }
+
+    .sidebar-posts {
+        display: none !important;
+    }
+
+    .sidebar-categories {
+
+        display: none !important;
+    }
+
+    .sidebar-tags {
+        padding-top: 3rem;
+    }
+}
+
+@media(max-width: 400px) {}

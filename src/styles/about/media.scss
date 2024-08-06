@@ -1,0 +1,74 @@
+@media(max-width: 1020px) {
+    .testimonial-clients-section {
+        padding-top: 6rem !important;
+    }
+
+    .testimonial-clients-container {
+        grid-template-columns: 100% !important;
+        grid-template-rows: 1fr .7fr;
+        gap: 5rem !important;
+    }
+
+    .client-list {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .client {
+        flex: 0 1 100%;
+    }
+
+    .newsletter-section {
+        margin-top: 0rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .description-section {
+        padding-top: 8rem;
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem !important;
+
+        .description-column {
+            text-align: center !important;
+        }
+    }
+
+
+}
+
+@media(max-width:620px) {
+    .benefits-list {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .team-user-list {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .client-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+
+    }
+}
+
+@media(max-width: 425px) {
+    .benefits-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .team-bar {
+        text-align: center;
+        flex-direction: column !important;
+    }
+
+    .testimonial-clients-container {
+        gap: 8rem !important;
+    }
+}

@@ -1,0 +1,25 @@
+.clients-section {}
+
+.client-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    // gap: 3rem;
+}
+
+.client {
+    position: relative;
+    // width: 100%;
+    // height: 100%;
+
+
+    img {
+        // position: inherit !important;
+        object-fit: scale-down;
+
+        &:hover {
+            filter: contrast(15.5) brightness(13.5);
+        }
+    }
+}

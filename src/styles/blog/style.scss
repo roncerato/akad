@@ -1,0 +1,12 @@
+.blog-section {
+    padding-top: 15rem;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+}
+
+@import "./sidebar.scss";
+@import "./main.scss";
