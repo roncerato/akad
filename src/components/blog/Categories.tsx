@@ -49,10 +49,7 @@ const Categories: React.FC<CategoriesProps> = ({ setUrl, values, getRandomVal })
                         ? randomValues.map((item, index) => (
                             <li className="siddebar-categories-item" key={Math.random().toString(36).slice(2)} onClick={() => setUrl(`https://dummyjson.com/posts/tag/${item}`)}>
                                 <T2>
-                                    <span className={flowRounded.className}>
-                                        {item}
-
-                                    </span>
+                                    {item}
                                 </T2>
                                 <T2>{valuesQuantity[index]}</T2>
                             </li>
@@ -61,7 +58,7 @@ const Categories: React.FC<CategoriesProps> = ({ setUrl, values, getRandomVal })
                             <li key={Math.random().toString(36).slice(2)} style={{ display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
                                 <T2>
                                     <span className={`${flowRounded.className} loading-text`}>
-                                       Summer
+                                        Summer
                                     </span>
                                 </T2>
                                 <T2>
