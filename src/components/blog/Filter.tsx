@@ -6,12 +6,13 @@ import { ChangeEvent, useState, useEffect } from "react"
 import { IPosts, IPostApi } from "./Main"
 import { filters, IFilter } from "@/constants/filters"
 import { faker } from "@faker-js/faker"
+import FilterLoading from "./FilterLoading"
 
-interface IProps { 
-    setUrl: React.Dispatch<React.SetStateAction<string>> 
+interface IProps {
+    setUrl: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Filter({setUrl}: IProps ) {
+export default function Filter({ setUrl }: IProps) {
 
     const [filterName, setFilterName] = useState<string>("latest");
     const [filterItems, setFilterItems] = useState<IPostApi | null>(null);
@@ -82,15 +83,21 @@ export default function Filter({setUrl}: IProps ) {
                 ))}
             </ul>
             <ul className="sidebar-posts-filter-content">
-                {filterItems?.posts.map(post => (
-                    <li key={Math.random().toString(36).slice(2)} className="sidebar-posts-filter-content-item">
-                        <div className="sidebar-posts-filter-img-wrap">
-                            <Image src={"/jpg/mountains.jpg"} alt={post.title} fill />
-                        </div>
-                        <H6>{post.title}</H6>
-                        <T3>{post.date}</T3>
-                    </li>
-                ))}
+                {
+                    filterItems
+                        ? filterItems?.posts.map(post => (
+                            <li key={Math.random().toString(36).slice(2)} className="sidebar-posts-filter-content-item">
+                                <div className="sidebar-posts-filter-img-wrap">
+                                    <Image src={"/jpg/mountains.jpg"} alt={post.title} fill />
+                                </div>
+                                <H6>{post.title}</H6>
+                                <T3>{post.date}</T3>
+                            </li>
+                        ))
+                        : [0, 0, 0].map(() => (
+                            <FilterLoading key={Math.random().toString(36).slice(2)}/>
+                        ))
+                }
             </ul>
         </div>
     )
