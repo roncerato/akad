@@ -12,9 +12,10 @@ const openSans = Open_Sans({ subsets: ["latin", "cyrillic"] });
 export async function generateMetadata(): Promise<Metadata>{
     const head = headers();
     const pathname = head.get("next-url");
-    
+    const page = pathname?.lastIndexOf("/")
+    console.log(pathname?.slice(page && page+1))
     return {
-        title: `${pathname?.slice(22).charAt(0).toUpperCase()}${pathname?.slice(23)} | AKAD.`
+        title: `${pathname?.slice(page && page+1).charAt(0).toUpperCase()}${pathname?.slice(page && page+2)} | AKAD.`
     }
 }
 
