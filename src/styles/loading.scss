@@ -1,0 +1,21 @@
+.loader-page-wrap{
+    display: block;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.loader-page {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #7beec7;
+    border-top-color: transparent;
+    animation: rot1 1.2s linear infinite;
+  }
+  
+  @keyframes rot1 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
