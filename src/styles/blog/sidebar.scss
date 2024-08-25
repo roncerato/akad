@@ -191,8 +191,10 @@
     text-transform: capitalize;
     cursor: pointer;
 
-    &:hover p.t-2:nth-child(1) {
+    p.t-2:nth-child(1) {
         transition: all ease-in 0.2s;
+    }
+    &:hover p.t-2:nth-child(1) {
         margin-left: 1rem;
     }
 
