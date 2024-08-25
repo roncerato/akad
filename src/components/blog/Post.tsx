@@ -4,13 +4,14 @@ import T2 from "../template/texts/t2";
 import Image from "next/image";
 import { IPosts } from "./Main";
 import { useState } from "react";
+import Link from "next/link";
 interface IProps {
     posts: IPosts
 }
 
 export default function Post({ posts }: IProps) {
 
-const [likes, setLikes] = useState<number>(posts.reactions.likes);
+    const [likes, setLikes] = useState<number>(posts.reactions.likes);
 
 
     return (
@@ -27,10 +28,10 @@ const [likes, setLikes] = useState<number>(posts.reactions.likes);
                 </div>
                 <div className="blog-post-comments">
                     <H6>
-                       {posts.comments}
+                        {posts.comments}
                     </H6>
                 </div>
-                <button className={`${posts.reactions.likes == likes ? "blog-post-likes" :"liked"}`} onClick={()=>{
+                <button className={`${posts.reactions.likes == likes ? "blog-post-likes" : "liked"}`} onClick={() => {
                     posts.reactions.likes == likes ? setLikes(likes + 1) : setLikes(likes - 1)
                 }}>
                     <H6>
@@ -44,11 +45,16 @@ const [likes, setLikes] = useState<number>(posts.reactions.likes);
             <T2>
                 {posts.body}
             </T2>
-            <button className="blog-post-btn-read-more">
-                <H6>
-                    continue reading
-                </H6>
-            </button>
+            <Link href={{
+                pathname: `/blog/post/`,
+                query: { id: posts.id},
+            }}>
+                <button className="blog-post-btn-read-more" onClick={() => { }}>
+                    <H6>
+                        continue reading
+                    </H6>
+                </button>
+            </Link>
         </li>
     )
 }
