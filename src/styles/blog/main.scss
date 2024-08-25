@@ -86,7 +86,11 @@
         display: block;
         background-image: url(/jpg/smiley.png);
         width: 30px;
-        aspect-ratio: 1/1
+        aspect-ratio: 1/1;
+    }
+    &:hover::before{
+        opacity: 0.8;
+
     }
 }
 
@@ -106,6 +110,10 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    &:hover::before{
+        opacity: 0.8;
+
+    }
 }
 
 .blog-post-btn-read-more {
@@ -113,7 +121,8 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-
+    transition: all .1s linear;
+    
     &::after {
         content: "";
         background-size: 100%;
@@ -122,7 +131,13 @@
         width: 12px;
         aspect-ratio: 1/1
     }
-
+    &:hover{
+        gap: 1.5rem
+    }
+    &:hover h6{
+        color: #60606ed3;
+    }
+    
 }
 
 .loader {
