@@ -144,10 +144,12 @@
 }
 
 .sidebar-posts-filter-content-item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: .8rem 1.7rem;
+    a{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: .8rem 1.7rem;
+    }
 
     h6 {
         align-self: flex-end;

@@ -86,19 +86,22 @@ export default function Filter() {
                 {
                     filterItems
                         ? filterItems?.posts.map(post => (
-                            <Link href={{
-                                pathname: `/blog/post/`,
-                                query: { id: post.id},
-                            }}>
-                                <li key={Math.random().toString(36).slice(2)}
-                                    className="sidebar-posts-filter-content-item">
+                            <li
+                                key={Math.random().toString(36).slice(2)}
+                                className="sidebar-posts-filter-content-item">
+
+                                <Link
+                                    href={{
+                                        pathname: `/blog/post/`,
+                                        query: { id: post.id },
+                                    }}>
                                     <div className="sidebar-posts-filter-img-wrap">
                                         <Image src={"/jpg/mountains.jpg"} alt={post.title} fill />
                                     </div>
                                     <H6>{post.title}</H6>
                                     <T3>{post.date}</T3>
-                                </li>
-                            </Link>
+                                </Link>
+                            </li>
                         ))
                         : [0, 0, 0].map(() => (
                             <FilterLoading key={Math.random().toString(36).slice(2)} />
