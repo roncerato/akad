@@ -37,7 +37,7 @@ export default function Sidebar({ setUrl }: IProps) {
     return (
         <aside className="sidebar">
             <SearchForm setUrl={setUrl} />
-            <Filter setUrl={setUrl} />
+            <Filter />
             <Categories setUrl={setUrl} getRandomVal={getRandomVal} values={values}/>
             <Tags setUrl={setUrl} values={values} getRandomVal={getRandomVal} />
             <Archives setUrl={setUrl} values={values} getRandomVal={getRandomVal} />
