@@ -70,7 +70,7 @@ export default function Post() {
           </div>
           <ul className="post-tag-list">
             {post.tags.map(item => (
-              <li className="post-tag">
+              <li className="post-tag" key={item}>
                 <H6>
                   {item}
                 </H6>
