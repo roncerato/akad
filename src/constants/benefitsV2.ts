@@ -1,6 +1,11 @@
+import Lamp from "public/svg/lamp.svg"
+import Pulse from "public/svg/pulse.svg"
+import Infinite from "public/svg/infinite.svg"
+import Options from "public/svg/options.svg"
+
 interface IBenefitsV2 {
     id: string
-    urlImg: string
+    Img:  React.FunctionComponent<React.SVGProps<SVGSVGElement>>
     title: string
     description: string
 }
@@ -8,25 +13,25 @@ interface IBenefitsV2 {
 export const benefitsV2: IBenefitsV2[] = [
     {
         id: "1",
-        urlImg: "/jpg/benefits/pulse.png",
+        Img: Pulse,
         title: "KEEP PULSE GOING",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ."
     },
     {
         id: "2",
-        urlImg: "/jpg/benefits/infinity.png",
+        Img: Infinite,
         title: "PASS THE LIMITS",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ."
     },
     {
         id: "3",
-        urlImg: "/jpg/benefits/lamp.png",
+        Img: Lamp,
         title: "GREAT IDEAS",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ."
     },
     {
         id: "4",
-        urlImg: "/jpg/benefits/lines.png",
+        Img: Options,
         title: "AWESOME SUPPORT",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ."
     },

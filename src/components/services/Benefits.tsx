@@ -11,7 +11,7 @@ export default function Benefits() {
                     {benefitsV2.map(item => (
                         <li className="services-benefit" key={Math.random().toString(36).slice(2)}>
                             <div className="services-benefit-img-wrap">
-                                <Image src={item.urlImg} alt={item.title} fill />
+                                <item.Img stroke="#60606e" strokeWidth={30} width={30} height={30}/>
                             </div>
                             <H5>
                                 {item.title}
