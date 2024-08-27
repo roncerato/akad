@@ -39,7 +39,7 @@ export default function TestimonialsSlider() {
                     <div key={"slider"+Math.random().toString(36).slice(2)}>
                         <div className="slide" >
                             <div className="testimonial-img-wrap">
-                                <Image src={"/jpg/testimonial.jpg"} alt={"test"} fill />
+                                <Image src={"/webp/about/testimonial.webp"} alt={"test"} fill />
                             </div>
                             <T2>
                                 Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus, gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
