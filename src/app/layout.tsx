@@ -13,9 +13,10 @@ export async function generateMetadata(): Promise<Metadata>{
     const head = headers();
     const pathname = head.get("next-url");
     const page = pathname?.lastIndexOf("/")
-    console.log(pathname?.slice(page && page+1))
+    
+
     return {
-        title: `${pathname?.slice(page && page+1).charAt(0).toUpperCase()}${pathname?.slice(page && page+2)} | AKAD.`
+        title: `${pathname?.slice(page && page+1).charAt(0).toUpperCase()}${pathname?.slice(page && page+2, pathname?.includes("?") ? pathname?.indexOf("?") : Infinity)} | AKAD.`
     }
 }
 
