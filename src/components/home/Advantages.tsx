@@ -8,9 +8,13 @@ import unlimited from "public/jpg/unlimited.png"
 import H5 from "../template/headings/h5";
 import advImg from "public/webp/main/advantages-img.webp"
 import AdvantagesListItem from "../template/AdvantagesListItem";
+import Cart from "public/svg/cart.svg"
+import Infinite from "public/svg/infinite.svg"
+import Options from "public/svg/options.svg"
+import Shuffle from "public/svg/shuffle.svg"
 export interface IAdvantageList {
     title: string
-    imgUrl: StaticImageData
+    Img: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
     advantageList: string[]
 }
 
@@ -19,7 +23,7 @@ export default function Advantages() {
     const advantagesList: IAdvantageList[] = [
         {
             title: "unlimited options",
-            imgUrl: unlimited,
+            Img: Infinite,
             advantageList: [
                 "Branding",
                 "Design & Copywriting",
@@ -29,7 +33,7 @@ export default function Advantages() {
         },
         {
             title: "DESIGN & DEVELOPMENT",
-            imgUrl: shuffle,
+            Img: Shuffle,
             advantageList: [
                 "Information architecture",
                 "Interface design",
@@ -39,7 +43,7 @@ export default function Advantages() {
         },
         {
             title: "E-Commerce",
-            imgUrl: shopCart,
+            Img: Cart,
             advantageList: [
                 "Prototyping",
                 "Technical Consulting",
@@ -49,7 +53,7 @@ export default function Advantages() {
         },
         {
             title: "CUSTOMIZABLE DESIGN",
-            imgUrl: lines,
+            Img: Options,
             advantageList: [
                 "Information architecture",
                 "Interface design",
@@ -75,7 +79,7 @@ export default function Advantages() {
                             <AdvantagesListItem
                                 key={String(Math.random() * 3000)}
                                 title={item.title}
-                                imgUrl={item.imgUrl}
+                                Img={item.Img}
                                 advantageList={item.advantageList}
                             />
                         ))

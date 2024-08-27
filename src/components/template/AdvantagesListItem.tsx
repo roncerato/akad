@@ -6,10 +6,10 @@ import T2 from "./texts/t2"
 interface IProps extends IAdvantageList {
 }
 
-export default function AdvantagesListItem({ title, imgUrl, advantageList }: IProps) {
+export default function AdvantagesListItem({ title, Img, advantageList }: IProps) {
     return (
         <li className="advantage-category-item">
-            <Image src={imgUrl} alt={title} />
+            <Img height={40} width={30} stroke="#60606e" stroke-width="20"/>
             <H5>
                 {title}
             </H5>
