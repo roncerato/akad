@@ -6,7 +6,7 @@ import shopCart from "public/jpg/shopCart.png"
 import shuffle from "public/jpg/sync.png"
 import unlimited from "public/jpg/unlimited.png"
 import H5 from "../template/headings/h5";
-import advImg from "public/jpg/advantages-img.png"
+import advImg from "public/webp/main/advantages-img.webp"
 import AdvantagesListItem from "../template/AdvantagesListItem";
 export interface IAdvantageList {
     title: string
