@@ -3,7 +3,7 @@ import { ChangeEvent, Dispatch, SetStateAction, useState } from "react"
 import H6 from "../template/headings/h6"
 import T2 from "../template/texts/t2"
 import { useOutsideClick } from "../hooks/useOutsideClick"
-
+import Search from "public/svg/search.svg"
 export default function SearchForm({setUrl}: {setUrl: React.Dispatch<React.SetStateAction<string>>}) {
 
     const [tags, setTags] = useState<string[] | null>()
@@ -42,7 +42,7 @@ export default function SearchForm({setUrl}: {setUrl: React.Dispatch<React.SetSt
                     setSearchQuery(e.target.value)
                     }} />
                 <button type="submit">
-                    <Image src={"/jpg/search.png"} alt={""} fill />
+                    <Search width={24} height={24}/>
                 </button>
             </form>
             {searchFormOpened && tags && <ul className="search-form-tag-list">

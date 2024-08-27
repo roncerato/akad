@@ -4,7 +4,7 @@ import Link from "next/link";
 import H4 from "./template/headings/h4";
 import Navigation from "./Navigation";
 import Image from "next/image";
-import close from "public/svg/close.svg"
+import Close from "public/svg/close.svg"
 import { useState } from "react";
 import { useOutsideClick } from "./hooks/useOutsideClick";
 
@@ -35,7 +35,7 @@ export default function Header() {
             <div className={`top-navigation ${isOpen ? "show" : "hide"}`}>
                 <div ref={topNavRef} className={`top-navigation-container`}>
                     <button className="hide-nav-btn" onClick={() => { setIsOpen(false) }}>
-                        <Image src={close} alt={"close"} />
+                        <Close/>
                     </button>
                     <Navigation setIsOpen={setIsOpen}/>
                 </div>
