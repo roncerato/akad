@@ -17,7 +17,7 @@ export default function Post({ posts }: IProps) {
     return (
         <li className="blog-post-item">
             <div className="blog-post-image-wrap">
-                <Image fill src={"/jpg/mountains.jpg"} alt={"mountains"} />
+                <Image fill src={"/webp/mountains.webp"} alt={"mountains"} />
 
             </div>
             <div className="blog-post-info">

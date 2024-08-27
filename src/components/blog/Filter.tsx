@@ -96,7 +96,7 @@ export default function Filter() {
                                         query: { id: post.id },
                                     }}>
                                     <div className="sidebar-posts-filter-img-wrap">
-                                        <Image src={"/jpg/mountains.jpg"} alt={post.title} fill />
+                                        <Image src={"/webp/mountains-small.webp"} alt={post.title} fill />
                                     </div>
                                     <H6>{post.title}</H6>
                                     <T3>{post.date}</T3>
