@@ -19,55 +19,47 @@ export const portfolioData: IPortfolioData[] = [
         categoryItem: [
             {
                 name: "site-1",
-                url: "/jpg/sites/1.jpg"
+                url: "/webp/main/portfolio/sites/1.webp"
             },
             {
                 name: "site-2",
-                url: "/jpg/sites/2.png"
+                url: "/webp/main/portfolio/sites/2.webp"
             },
             {
                 name: "site-3",
-                url: "/jpg/sites/3.png"
+                url: "/webp/main/portfolio/sites/3.webp"
             },
             {
                 name: "site-4",
-                url: "/jpg/sites/4.png"
+                url: "/webp/main/portfolio/sites/4.webp"
             },
             {
                 name: "site-5",
-                url: "/jpg/sites/5.png"
+                url: "/webp/main/portfolio/sites/5.webp"
             },
             {
                 name: "site-6",
-                url: "/jpg/sites/6.png"
+                url: "/webp/main/portfolio/sites/6.webp"
             },
             {
                 name: "site-7",
-                url: "/jpg/sites/7.png"
+                url: "/webp/main/portfolio/sites/7.webp"
             },
             {
                 name: "site-8",
-                url: "/jpg/sites/8.png"
+                url: "/webp/main/portfolio/sites/8.webp"
             },
             {
                 name: "site-9",
-                url: "/jpg/sites/9.png"
+                url: "/webp/main/portfolio/sites/9.webp"
             },
             {
                 name: "site-10",
-                url: "/jpg/sites/10.png"
+                url: "/webp/main/portfolio/sites/10.webp"
             },
             {
                 name: "site-11",
-                url: "/jpg/sites/10.png"
-            },
-            {
-                name: "site-12",
-                url: "/jpg/sites/10.png"
-            },
-            {
-                name: "site-13",
-                url: "/jpg/sites/10.png"
+                url: "/webp/main/portfolio/sites/10.webp"
             },
         ]
     },
@@ -77,43 +69,43 @@ export const portfolioData: IPortfolioData[] = [
         categoryItem: [
             {
                 name: "adv-1",
-                url: "/jpg/advertising/1.jpg"
+                url: "/webp/main/portfolio/advertising/1.webp"
             },
             {
                 name: "adv-2",
-                url: "/jpg/advertising/2.jpg"
+                url: "/webp/main/portfolio/advertising/2.webp"
             },
             {
                 name: "adv-3",
-                url: "/jpg/advertising/3.jpg"
+                url: "/webp/main/portfolio/advertising/3.webp"
             },
             {
                 name: "adv-4",
-                url: "/jpg/advertising/4.jpg"
+                url: "/webp/main/portfolio/advertising/4.webp"
             },
             {
                 name: "adv-5",
-                url: "/jpg/advertising/5.jpg"
+                url: "/webp/main/portfolio/advertising/5.webp"
             },
             {
                 name: "adv-6",
-                url: "/jpg/advertising/6.jpg"
+                url: "/webp/main/portfolio/advertising/6.webp"
             },
             {
                 name: "adv-7",
-                url: "/jpg/advertising/7.jpg"
+                url: "/webp/main/portfolio/advertising/7.webp"
             },
             {
                 name: "adv-8",
-                url: "/jpg/advertising/8.jpg"
+                url: "/webp/main/portfolio/advertising/8.webp"
             },
             {
                 name: "adv-9",
-                url: "/jpg/advertising/9.jpg"
+                url: "/webp/main/portfolio/advertising/9.webp"
             },
             {
                 name: "adv-10",
-                url: "/jpg/advertising/10jpgg"
+                url: "/webp/main/portfolio/advertising/10.webp"
             }
         ]
     },
@@ -123,43 +115,43 @@ export const portfolioData: IPortfolioData[] = [
         categoryItem: [
             {
                 name: "fahion-1",
-                url: "/jpg/fashion/1.jpg"
+                url: "/webp/main/portfolio/fashion/1.webp"
             },
             {
                 name: "fahion-2",
-                url: "/jpg/fashion/2.jpeg"
+                url: "/webp/main/portfolio/fashion/2.webp"
             },
             {
                 name: "fahion-3",
-                url: "/jpg/fashion/3.jpg"
+                url: "/webp/main/portfolio/fashion/3.webp"
             },
             {
                 name: "fahion-4",
-                url: "/jpg/fashion/4.jpg"
+                url: "/webp/main/portfolio/fashion/4.webp"
             },
             {
                 name: "fahion-5",
-                url: "/jpg/fashion/5.jpg"
+                url: "/webp/main/portfolio/fashion/5.webp"
             },
             {
                 name: "fahion-6",
-                url: "/jpg/fashion/6.jpg"
+                url: "/webp/main/portfolio/fashion/6.webp"
             },
             {
                 name: "fahion-7",
-                url: "/jpg/fashion/7.jpg"
+                url: "/webp/main/portfolio/fashion/7.webp"
             },
             {
                 name: "fahion-8",
-                url: "/jpg/fashion/8.jpg"
+                url: "/webp/main/portfolio/fashion/8.webp"
             },
             {
                 name: "fahion-9",
-                url: "/jpg/fashion/9.jpeg"
+                url: "/webp/main/portfolio/fashion/9.webp"
             },
             {
                 name: "fahion-10",
-                url: "/jpg/fashion/10.png"
+                url: "/webp/main/portfolio/fashion/10.webp"
             },
 
         ]
@@ -170,43 +162,43 @@ export const portfolioData: IPortfolioData[] = [
         categoryItem: [
             {
                 name: "graphicDesign-1",
-                url: "/jpg/graphicDesign/1.jpg"
+                url: "/webp/main/portfolio/graphicDesign/1.webp"
             },
             {
                 name: "graphicDesign-2",
-                url: "/jpg/graphicDesign/2.jpg"
+                url: "/webp/main/portfolio/graphicDesign/2.webp"
             },
             {
                 name: "graphicDesign-3",
-                url: "/jpg/graphicDesign/3.jpg"
+                url: "/webp/main/portfolio/graphicDesign/3.webp"
             },
             {
                 name: "graphicDesign-4",
-                url: "/jpg/graphicDesign/4.jpg"
+                url: "/webp/main/portfolio/graphicDesign/4.webp"
             },
             {
                 name: "graphicDesign-5",
-                url: "/jpg/graphicDesign/5.jpg"
+                url: "/webp/main/portfolio/graphicDesign/5.webp"
             },
             {
                 name: "graphicDesign-6",
-                url: "/jpg/graphicDesign/6.jpg"
+                url: "/webp/main/portfolio/graphicDesign/6.webp"
             },
             {
                 name: "graphicDesign-7",
-                url: "/jpg/graphicDesign/7.jpg"
+                url: "/webp/main/portfolio/graphicDesign/7.webp"
             },
             {
                 name: "graphicDesign-8",
-                url: "/jpg/graphicDesign/8.jpg"
+                url: "/webp/main/portfolio/graphicDesign/8.webp"
             },
             {
                 name: "graphicDesign-9",
-                url: "/jpg/graphicDesign/9.jpg"
+                url: "/webp/main/portfolio/graphicDesign/9.webp"
             },
             {
                 name: "graphicDesign-10",
-                url: "/jpg/graphicDesign/10.jpg"
+                url: "/webp/main/portfolio/graphicDesign/10.webp"
             },
 
         ]
@@ -217,43 +209,43 @@ export const portfolioData: IPortfolioData[] = [
         categoryItem: [
             {
                 name: "logo-1",
-                url: "/jpg/logo/1.png"
+                url: "/webp/main/portfolio/logo/1.webp"
             },
             {
                 name: "logo-2",
-                url: "/jpg/logo/2.jpg"
+                url: "/webp/main/portfolio/logo/2.webp"
             },
             {
                 name: "logo-6",
-                url: "/jpg/logo/6.png"
+                url: "/webp/main/portfolio/logo/6.webp"
             },
             {
                 name: "logo-4",
-                url: "/jpg/logo/4.jpg"
+                url: "/webp/main/portfolio/logo/4.webp"
             },
             {
                 name: "logo-5",
-                url: "/jpg/logo/5.jpg"
+                url: "/webp/main/portfolio/logo/5.webp"
             },
             {
                 name: "logo-3",
-                url: "/jpg/logo/3.png"
+                url: "/webp/main/portfolio/logo/3.webp"
             },
             {
                 name: "logo-7",
-                url: "/jpg/logo/7.png"
+                url: "/webp/main/portfolio/logo/7.webp"
             },
             {
                 name: "logo-8",
-                url: "/jpg/logo/8.png"
+                url: "/webp/main/portfolio/logo/8.webp"
             },
             {
                 name: "logo-9",
-                url: "/jpg/logo/9.jpg"
+                url: "/webp/main/portfolio/logo/9.webp"
             },
             {
                 name: "logo-10",
-                url: "/jpg/logo/10.png"
+                url: "/webp/main/portfolio/logo/10.webp"
             },
         ]
     },

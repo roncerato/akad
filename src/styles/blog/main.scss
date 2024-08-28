@@ -63,58 +63,20 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-
-    &::before {
-        content: "";
-        display: block;
-        background-image: url(/jpg/chat.png);
-        width: 30px;
-        aspect-ratio: 1/1;
-        background-size: 100%;
-    }
 }
 
 .blog-post-likes {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: .4rem;
 
-    &::before {
-        content: "";
-        background-size: 100%;
-        display: block;
-        background-image: url(/jpg/smiley.png);
-        width: 30px;
-        aspect-ratio: 1/1;
-    }
-    &:hover::before{
+    &:hover svg{
         opacity: 0.8;
 
     }
 }
 
-.liked {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-
-    &::before {
-        content: "";
-        background-size: 100%;
-        display: block;
-        background-image: url(/jpg/smiley_red.png);
-        width: 30px;
-        aspect-ratio: 1/1;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    &:hover::before{
-        opacity: 0.8;
-
-    }
-}
 
 .blog-post-btn-read-more {
     display: flex;
@@ -127,8 +89,8 @@
         content: "";
         background-size: 100%;
         display: block;
-        background-image: url(/jpg/right.png);
-        width: 12px;
+        background-image: url(/svg/right-chevron.svg);
+        width: 16px;
         aspect-ratio: 1/1
     }
     &:hover{

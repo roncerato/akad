@@ -1,6 +1,13 @@
+import Smartphone from "public/svg/smartphone.svg";
+import Infinite from "public/svg/infinite.svg";
+import Wordpress from "public/svg/wordpress.svg";
+import Cart from "public/svg/cart.svg";
+import Options from "public/svg/options.svg";
+import Construct from "public/svg/construct.svg";
+
 interface IBenefit {
     id: string
-    imgSrc: string
+    Img: React.FunctionComponent<React.SVGProps<SVGSVGElement>>,
     title: string
     description: string
 }
@@ -8,37 +15,37 @@ interface IBenefit {
 export const benefits: IBenefit[] = [
     {
         id: "1",
-        imgSrc: "/jpg/phone.png",
+        Img: Smartphone,
         title: "FULLY RESPONSIVE",
         description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae."
     },
     {
         id: "2",
-        imgSrc: "/jpg/unlimited.png",
+        Img: Infinite,
         title: "UNLIMITED OPTIONS",
         description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae."
     },
     {
         id: "3",
-        imgSrc: "/jpg/wordpress.png",
+        Img: Wordpress,
         title: "WORDPRESS",
         description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae."
     },
     {
         id: "4",
-        imgSrc: "/jpg/shopCart.png",
+        Img: Cart,
         title: "e-commerce",
         description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae."
     },
     {
         id: "5",
-        imgSrc: "/jpg/lines.png",
+        Img: Options,
         title: "CUSTOMIZABLE DESIGN",
         description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae."
     },
     {
         id: "6",
-        imgSrc: "/jpg/settings.png",
+        Img: Construct,
         title: "SUPPORT",
         description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae."
     },

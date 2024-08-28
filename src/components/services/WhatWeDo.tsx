@@ -72,7 +72,7 @@ export default function WhatWeDo() {
                         </ul>
                     </div>
                     <div className="wwd-img-section">
-                        <Image src={"/jpg/wwd-image.jpg"} alt={"image"} fill />
+                        <Image src={"/webp/wwd-image.webp"} alt={"image"} fill />
                     </div>
                 </div>
             </div>

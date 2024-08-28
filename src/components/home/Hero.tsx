@@ -6,7 +6,7 @@ import H5 from "../template/headings/h5";
 import T1 from "../template/texts/t1";
 import T2 from "../template/texts/t2";
 import Image from "next/image";
-import historyImage from "public/jpg/history-img.png"
+import historyImage from "public/webp/main/history-img.webp"
 export default function Hero() {
     return (
         <section className="hero-section">

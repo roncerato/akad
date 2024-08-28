@@ -4,6 +4,12 @@ import Navigation from "./Navigation";
 import T2 from "./template/texts/t2";
 import T3 from "./template/texts/t3";
 import FooterNavigation from "./FooterNavigation";
+import Facebook from "public/svg/social/facebook.svg"
+import Inst from "public/svg/social/inst.svg"
+import LinkedIn from "public/svg/social/linkedin.svg"
+import TikTok from "public/svg/social/tiktok.svg"
+import Twitter from "public/svg/social/twitter.svg"
+import Youtube from "public/svg/social/youtube.svg"
 
 export default function Footer() {
 
@@ -13,37 +19,37 @@ export default function Footer() {
             id: "1",
             name: "FACEBOOK",
             url: "https://www.facebook.com",
-            imgHref: "/social/fb.png"
+            Img: Facebook
         },
         {
             id: "1",
             name: "TWITTER",
             url: "https://www.twitter.com",
-            imgHref: "/social/twitter.png"
+            Img: Twitter
         },
         {
             id: "1",
             name: "YOUTUBE",
             url: "https://www.youtube.com",
-            imgHref: "/social/yt.png"
+            Img: Youtube
         },
         {
             id: "1",
             name: "LinkedIn",
             url: "https://www.linkedin.com",
-            imgHref: "/social/linkedln.png"
+            Img: LinkedIn
         },
         {
             id: "1",
             name: "TIKTOK",
             url: "https://www.tiktok.com",
-            imgHref: "/social/tt.png"
+            Img: TikTok
         },
         {
             id: "1",
             name: "INSTAGRAM",
             url: "https://www.INSTAGRAM.com",
-            imgHref: "/social/inst.png"
+            Img: Inst
         },
     ]
 
@@ -62,7 +68,7 @@ export default function Footer() {
                         {social.map(item => (
                             <li className="footer-social-item" key={"s"+Math.random().toString(36).slice(2)}>
                                 <Link href={item.url} target="_blank" rel="noopener noreferrer">
-                                    <Image src={item.imgHref} alt={item.name} fill />
+                                    <item.Img fill="#989898" width={20} height={20}/>
                                 </Link>
                             </li>
                         ))

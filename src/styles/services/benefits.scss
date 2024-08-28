@@ -19,6 +19,7 @@
     width: auto;
     display: inline-block;
     align-self: center;
+    z-index: 999;
 
     &::before {
         content: "";
@@ -29,6 +30,7 @@
         height: 20px;
         bottom: -6px;
         left: -16px;
+        z-index: -1;
     }
 
     img {
