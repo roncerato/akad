@@ -77,15 +77,6 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-
-    &::before {
-        content: "";
-        display: block;
-        background-image: url(/jpg/chat.png);
-        width: 30px;
-        aspect-ratio: 1/1;
-        background-size: 100%;
-    }
 }
 
 .post-views {
@@ -99,15 +90,6 @@ align-self: flex-end;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-
-    &::before {
-        content: "";
-        background-size: 100%;
-        display: block;
-        background-image: url(/jpg/smiley.png);
-        width: 30px;
-        aspect-ratio: 1/1
-    }
 }
 
 .liked {
