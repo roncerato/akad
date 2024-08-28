@@ -10,6 +10,8 @@ import T1 from "@/components/template/texts/t1";
 import PostLoading from "@/components/blog/post/PostLoading";
 import "@/styles/blog/post/style.scss"
 import { faker } from "@faker-js/faker";
+import CommentIcon from "public/svg/comment.svg"
+import HeartIcon from "public/svg/heart.svg"
 
 export interface IPostWithAuthorPost extends IPosts {
   firstName: string,
@@ -19,8 +21,10 @@ export interface IPostWithAuthorPost extends IPosts {
 }
 
 export default function Post() {
-  const [post, setPost] = useState< IPostWithAuthorPost | null>()
+  const [post, setPost] = useState<IPostWithAuthorPost | null>()
   const [likes, setLikes] = useState<number>();
+  const [heartColor, setHeartColor] = useState<"#CCC" | "#FC4C59">("#CCC")
+
   const searchParams = useSearchParams()
   const id = searchParams.get("id")
 
@@ -66,7 +70,7 @@ export default function Post() {
 
           </div>
           <div className="post-img-container">
-            <Image fill src={"/jpg/mountains.jpg"} alt={"mountains"} />
+            <Image fill src={"/webp/mountains.webp"} alt={"mountains"} />
           </div>
           <ul className="post-tag-list">
             {post.tags.map(item => (
@@ -80,14 +84,23 @@ export default function Post() {
           </ul>
           <div className="post-info">
             <div className="post-comments">
+                    <CommentIcon width={34} height={34} fill="#ccc"/>
               <H6>
                 {post.comments}
               </H6>
             </div>
-            
-            <button className={`${post.reactions.likes == likes ? "blog-post-likes" : "liked"}`} onClick={() => {
-                    post.reactions.likes == likes ? setLikes(likes + 1) : setLikes(likes! - 1)
-                }}>
+
+            <button className={"post-likes"} onClick={() => {
+              if (post.reactions.likes == likes) {
+                setLikes(likes + 1)
+                setHeartColor("#FC4C59")
+              }
+              else {
+                setLikes(likes! - 1)
+                setHeartColor("#CCC")
+              }
+            }}>
+              <HeartIcon width={44} height={44} fill={heartColor} />
               <H6>
                 {likes}
               </H6>
